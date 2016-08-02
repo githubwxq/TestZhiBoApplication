@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="horizontal"
+    tools:context="com.example.administrator.testzhiboapplication.activity.TestInterfaceActivity">
+
+<ListView
+    android:id="@+id/lv_interfaces"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:background="#333f3f"
+    ></ListView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#336f3f"
+
+            android:hint="接口返回值"
+            />
+        <ListView
+            android:id="@+id/lv_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
