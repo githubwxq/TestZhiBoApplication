@@ -2,8 +2,11 @@ package com.example.administrator.testzhiboapplication.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.classic.adapter.BaseAdapterHelper;
 import com.classic.adapter.CommonAdapter;
@@ -44,8 +47,42 @@ public class TestInterfaceActivity extends AppCompatActivity {
             }
         });
 
+        lvInterfaces.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                getDataFromNet(position);
+            }
+        });
+
+    }
+
+    private void getDataFromNet(int position) {
+
+        switch (position){
+            case 0:
+                Toast.makeText(this, "0000000", Toast.LENGTH_SHORT).show();
 
 
+
+                break;
+            case 1:
+                Toast.makeText(this, "111111", Toast.LENGTH_SHORT).show();
+
+                break;
+            case 2:
+                Toast.makeText(this, "2222222", Toast.LENGTH_SHORT).show();
+
+                break;
+            case 3:
+                Toast.makeText(this, "33333", Toast.LENGTH_SHORT).show();
+
+                break;
+            case 4:
+
+                break;
+
+
+        }
     }
 
     private void initdata() {
@@ -54,9 +91,6 @@ public class TestInterfaceActivity extends AppCompatActivity {
         interfacelists.add("修改直播频道");
         interfacelists.add("查询直播并发数");
         interfacelists.add("删除直播频道");
-
-
-
 
     }
 
